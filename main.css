@@ -1,0 +1,127 @@
+/******************************************\
+                $CSS Reset
+\******************************************/
+
+/* basic elements */
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{
+margin: 0; padding: 0; border: 0; outline: none;
+}
+
+body
+{
+line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+padding: .6em 0;
+margin: 0 0;
+}
+
+ul, ol
+{
+list-style: none;
+}
+
+a
+{
+color: green;
+text-decoration: none;
+}
+
+a:hover
+{
+text-decoration: none;
+color: #EBB000;
+}
+
+/******************************************\
+                $Main
+\******************************************/
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+.carousel-outer-container {
+    width: 200px;
+    height: 200px;
+    border: 5px black solid;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    width: 1200px;
+    height: 200px;
+    margin: 0;
+    font-size: 0;           /*Gets rid of the space between the img elements, because a space with a size 0 font means:                                                 no space. Why the space? Img elements have a default CSS style of "display: inline-block", which puts spaces b/w the elements set on that LINE (like a sentence). */
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s ease-in-out;
+}
+
+.sliding-image {
+    width: 200px;
+    height: 200px;
+}
+
+.navLinks {
+    text-align: center;
+    width: 200px;
+}
+
+.navLinks ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-top: 6px;
+    font-size: small;
+}
+
+.itemLinks {
+    float: left;
+    text-align: center;
+    margin: 8.5px;
+    list-style: none;
+    cursor: pointer;
+    background-color: #CCCCCC;
+    padding: 5px;         /*   There is nothing b/w the opening and closing li tags, so the "background-color" property won't show up since there's nothing to show up behind....adding "padding" to this element adds some size to it (previously MIA) and thus the background color shows up and it's not just a black circle (a result of the "border" property).   */
+    border-radius: 50%;
+    border: black 3px solid;  /*not sure if this will be a functional size*/
+}
+
+.itemLinks:hover {
+    background-color: #FFFF00;
+}
+
+.itemLinks.active {
+    background-color: #333333;
+    color: #FFFFFF;
+    outline-width: 7px;  /* not sure what this does...or if this will be a functional size*/
+}
+
+.itemLinks.active:hover {
+    background-color: #4848484;           /*Is this property necessary?*/
+    color: #FFFFFF;
+}
+
+
+/***Portfolio Slider CSS***/
+.portfolio-carousel-inner {
+    width:;   /*?????*/
+    height: 200px;
+    margin: 0;
+    font-size: 0;     /*Gets rid of the space between the img elements, because a space with a size 0 font means:                                                 no space. Why the space? Img elements have a default CSS style of "display: inline-block", which puts spaces b/w the elements set on that LINE (like a sentence). */
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s ease-in-out;
+}
+
+.portfolio-sliding-image {
+    width: 235px;
+    height: 135px;
+}
