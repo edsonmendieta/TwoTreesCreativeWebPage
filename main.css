@@ -113,8 +113,8 @@ body {
 
 /***Portfolio Slider CSS***/
 .portfolio-carousel-inner {
-    width:;   /*?????*/
-    height: 200px;
+    width: 1880px;
+    height: 135px;
     margin: 0;
     font-size: 0;     /*Gets rid of the space between the img elements, because a space with a size 0 font means:                                                 no space. Why the space? Img elements have a default CSS style of "display: inline-block", which puts spaces b/w the elements set on that LINE (like a sentence). */
     transform: translate3d(0, 0, 0);
@@ -124,4 +124,44 @@ body {
 .portfolio-sliding-image {
     width: 235px;
     height: 135px;
+}
+
+.portfolio-navLinks {
+    text-align: center;
+    width: 235px;
+}
+
+.portfolio-navLinks ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-top: 6px;
+    font-size: small;
+}
+
+.portfolio-itemLinks {
+    float: left;
+    text-align: center;
+    margin: 6.5px;
+    list-style: none;
+    cursor: pointer;
+    background-color: #CCCCCC;
+    padding: 5px;         /*   There is nothing b/w the opening and closing li tags, so the "background-color" property won't show up since there's nothing to show up behind....adding "padding" to this element adds some size to it (previously MIA) and thus the background color shows up and it's not just a black circle (a result of the "border" property).   */
+    border-radius: 50%;
+    border: black 3px solid;  /*not sure if this will be a functional size*/
+}
+
+.portfolio-itemLinks:hover {
+    background-color: #FFFF00;
+}
+
+.portfolio-itemLinks.active {
+    background-color: #333333;
+    color: #FFFFFF;
+    outline-width: 7px;  /* not sure what this does...or if this will be a functional size*/
+}
+
+.portfolio-itemLinks.active:hover {
+    background-color: #4848484;           /*Is this property necessary?*/
+    color: #FFFFFF;
 }
