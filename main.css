@@ -4,7 +4,7 @@
 
 /* basic elements */
 body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
-li, dl, dt, dd, form, a, fieldset, input, th, td
+li, dl, dt, dd, form, a, fieldset, th, td
 {
 margin: 0; padding: 0; border: 0; outline: none;
 }
@@ -112,6 +112,14 @@ body {
 
 
 /***Portfolio Slider CSS***/
+
+.portfolio-carousel-outer-container {
+    width: 235px;     /* Not all may be 235px wide */
+    height: 135px;
+    border: 5px black solid;
+    overflow: hidden;
+}
+
 .portfolio-carousel-inner {
     width: 1880px;
     height: 135px;
