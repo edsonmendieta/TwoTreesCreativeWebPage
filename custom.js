@@ -69,7 +69,7 @@ function getSupportedPropertyName(properties) {
 
 
 
-// JS for Portfolio Carousel (same JS from team carousel)
+// JS for Portfolio Carousel (same js from team carousel)
 
 // just querying the DOM...like a boss!
 var linkage = document.querySelectorAll(".portfolio-itemLinks");

@@ -49,6 +49,8 @@ body {
     width: 100%;
 }
 
+/***Team Slider CSS***/
+
 .carousel-outer-container {
     width: 200px;
     height: 200px;
@@ -172,4 +174,20 @@ body {
 .portfolio-itemLinks.active:hover {
     background-color: #4848484;           /*Is this property necessary?*/
     color: #FFFFFF;
+}
+
+
+/***Form CSS***/
+
+.emailBox {
+    margin-bottom: 5px;
+}
+
+.nameBox {
+    margin-bottom:5px;
+}
+
+.messageBox {
+    width: 168px;
+    height: 80px;
 }
