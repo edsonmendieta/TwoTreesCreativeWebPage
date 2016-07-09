@@ -191,3 +191,18 @@ body {
     width: 168px;
     height: 80px;
 }
+
+.sendButton {
+    margin-bottom: 25px;
+}
+
+/***Back to Top Button***/
+
+.backToTopButton {
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.backToTopButton span {
+
+}
