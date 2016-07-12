@@ -49,7 +49,39 @@ body {
     width: 100%;
 }
 
+/***Company Logo***/
+
+.companyLogo-container {
+    display: flex;
+    justify-content: center;
+}
+
+/***Intro headings***/
+
+#intro {
+    text-align: center;
+}
+
+#intro-end-sentence {
+    text-align: center;
+}
+
+/***About headings***/
+
+#about-section-heading {
+    text-align: center;
+}
+
+#meet-team-heading {
+    text-align: center;
+}
+
 /***Team Slider CSS***/
+
+.team-carousel-outmost-container {
+    display: flex;
+    justify-content: center;
+}
 
 .carousel-outer-container {
     width: 200px;
@@ -73,8 +105,9 @@ body {
 }
 
 .navLinks {
-    text-align: center;
-    width: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .navLinks ul {
@@ -112,8 +145,19 @@ body {
     color: #FFFFFF;
 }
 
+/***Portfolio heading***/
+
+#portfolio-section-heading {
+    text-align: center;
+}
+
 
 /***Portfolio Slider CSS***/
+
+.portfolio-carousel-outmost-container {
+    display: flex;
+    justify-content: center;
+}
 
 .portfolio-carousel-outer-container {
     width: 235px;     /* Not all may be 235px wide */
@@ -137,8 +181,9 @@ body {
 }
 
 .portfolio-navLinks {
-    text-align: center;
-    width: 235px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .portfolio-navLinks ul {
@@ -176,8 +221,17 @@ body {
     color: #FFFFFF;
 }
 
+/***Contact section heading***/
+
+#contactUs-section-heading {
+    text-align: center;
+}
 
 /***Form CSS***/
+
+.contact-form-section {
+    text-align: center;
+}
 
 .emailBox {
     margin-bottom: 5px;
@@ -198,6 +252,11 @@ body {
 
 /***Back to Top Button***/
 
+.top-button {
+    display: flex;
+    justify-content: center;
+}
+
 .backToTopButton {
     padding: 20px;
     background-color: lightblue;
@@ -209,6 +268,8 @@ body {
 
 /***social media icons***/      /* courtesy of Font Awesome */
 
-.twitterIcon {
+.socialMediaIcons {
+    display: flex;
+    justify-content: center;
     margin-top: 60px;
 }

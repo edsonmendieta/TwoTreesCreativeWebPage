@@ -18,9 +18,12 @@
 </head>
 
 <body>
+	<div class="companyLogo-container">
+		<img class="companyLogo" src="images/ttc_logo copy.png">
+	</div>
 	<h1 id="intro">Designing Your<br>World</h1>
-	<h5>One pixel at a time</h5>
-	<nav>
+	<h4 id="intro-end-sentence">One pixel at a time</h4>
+	<nav class="">
 		<ul>
 			<li><a>Home</a></li>
 			<li><a>About</a></li>
@@ -29,18 +32,20 @@
 		</ul>
 	</nav>
 	<section class="about">
-		<h2>About us</h2>
+		<h2 id="about-section-heading">About us</h2>
 		<p>Two Trees Creative is a full-service graphic design agency based in Ventura, CA. Our goal is to provide elegant work and unsurpassed customer service to our clients in every way.</p>
-		<h3>Meet Our Team of Creatives</h3>
-		<div class="carousel-outer-container">          <!--Team carousel Starts-->
-			<figure class="carousel-inner">
-				<img class="sliding-image" src="images/team/alex_morrales.jpg" alt="">
-				<img class="sliding-image" src="images/team/david_kim.jpg" alt="">
-				<img class="sliding-image" src="images/team/jenny_tabers.jpg" alt="">
-				<img class="sliding-image" src="images/team/joey_barrett.jpg" alt="">
-				<img class="sliding-image" src="images/team/melinda_lee.jpg" alt="">
-				<img class="sliding-image" src="images/team/rachel_dotson.jpg" alt="">
-			</figure>
+		<h3 id="meet-team-heading">Meet Our Team of Creatives</h3>
+		<div class="team-carousel-outmost-container">
+			<div class="carousel-outer-container">          <!--Team carousel Starts-->
+				<figure class="carousel-inner">
+					<img class="sliding-image" src="images/team/alex_morrales.jpg" alt="">
+					<img class="sliding-image" src="images/team/david_kim.jpg" alt="">
+					<img class="sliding-image" src="images/team/jenny_tabers.jpg" alt="">
+					<img class="sliding-image" src="images/team/joey_barrett.jpg" alt="">
+					<img class="sliding-image" src="images/team/melinda_lee.jpg" alt="">
+					<img class="sliding-image" src="images/team/rachel_dotson.jpg" alt="">
+				</figure>
+			</div>
 		</div>
 		<div class="navLinks">      <!-- Team carousel navLinks -->
 			<ul>
@@ -55,17 +60,20 @@
 		<p class="not-floated">Collectively we have over 15 years experience in the graphic design industry, and our services include brand identity development, business cards, brochures, flyers, catalogs, and more. Thank you for considering us for your next project, and we hope to hear from you soon.</p>
 	</section>
 	<section class="Portfolio">
-		<div class="portfolio-carousel-outer-container">       <!-- Portfolio carousel Starts -->
-			<figure class="portfolio-carousel-inner">
-				<img class="portfolio-sliding-image" src="images/portfolio/akridge_bcard.jpg">
-				<img class="portfolio-sliding-image" src="images/portfolio/balloon_races.jpg">
-				<img class="portfolio-sliding-image" src="images/portfolio/eyedr_billboard.jpg">
-				<img class="portfolio-sliding-image" src="images/portfolio/history_of_flight.jpg">
-				<img class="portfolio-sliding-image" src="images/portfolio/nerdcamp_logo.jpg">
-				<img class="portfolio-sliding-image" src="images/portfolio/rockout_festival.jpg">
-				<img class="portfolio-sliding-image" src="images/portfolio/seminar_flyer.jpg">
-				<img class="portfolio-sliding-image" src="images/portfolio/welder_poster.jpg">
-			</figure>
+		<h2 id="portfolio-section-heading">Portfolio</h2>
+		<div class="portfolio-carousel-outmost-container">
+			<div class="portfolio-carousel-outer-container">       <!-- Portfolio carousel Starts -->
+				<figure class="portfolio-carousel-inner">
+					<img class="portfolio-sliding-image" src="images/portfolio/akridge_bcard.jpg">
+					<img class="portfolio-sliding-image" src="images/portfolio/balloon_races.jpg">
+					<img class="portfolio-sliding-image" src="images/portfolio/eyedr_billboard.jpg">
+					<img class="portfolio-sliding-image" src="images/portfolio/history_of_flight.jpg">
+					<img class="portfolio-sliding-image" src="images/portfolio/nerdcamp_logo.jpg">
+					<img class="portfolio-sliding-image" src="images/portfolio/rockout_festival.jpg">
+					<img class="portfolio-sliding-image" src="images/portfolio/seminar_flyer.jpg">
+					<img class="portfolio-sliding-image" src="images/portfolio/welder_poster.jpg">
+				</figure>
+			</div>
 		</div>
 		<div class="portfolio-navLinks">  <!-- Portfolio carousel navLinks -->
 			<ul>
@@ -80,12 +88,15 @@
 			</ul>
 		</div>
 	</section>
-	<form action="https://formspree.io/emendietaj@gmail.com" method="POST">
-		<input class="emailBox" type="email" name="_replyto" placeholder="Your Email Address">
-    	<input class="nameBox" type="text" name="name" placeholder="Your Name">
-		<textarea class="messageBox" name="message" placeholder="Your message goes here..."></textarea><br>
-    	<input class="sendButton" type="submit" value="Send">
-	</form>
+	<section class="contactUs">
+		<h2 id="contactUs-section-heading">Contact Us</h2>
+		<form class="contact-form-section" action="https://formspree.io/emendietaj@gmail.com" method="POST">
+			<input class="emailBox" type="email" name="_replyto" placeholder="Your Email Address">
+	    	<input class="nameBox" type="text" name="name" placeholder="Your Name">
+			<textarea class="messageBox" name="message" placeholder="Your message goes here..."></textarea><br>
+	    	<input class="sendButton" type="submit" value="Send">
+		</form>
+	</section>
 	<div class="top-button">
 		<a class="backToTopButton" href="#intro"><span>Upwards!</span></a>
 	</div>
