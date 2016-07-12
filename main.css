@@ -43,10 +43,21 @@ color: #EBB000;
 
 html {
     width: 100%;
+    height: 100%;
 }
 
 body {
     width: 100%;
+    height: 100%;
+}
+
+/***Welcome section***/
+
+.welcome {
+    background-image: url(images/Untitled-billybonds.jpg);       /*When saving an image from Photoshop, whatever part of the background (even if it's transparent) the actual img doesn't cover gets added as whitespace around it. So, when you add the img in CSS and try to make it "cover" the full screen in the browser window it has some whitespace around it where it  didn't cover the background pixels of the Photoshop document it was in.    My solution: Find out the dimensions of the actual img and make the Photoshop document the same size or slightly smaller. Result: When you save the img (jpeg, png, etc.) and use it on your webpage, there won't be any whitespace around it acting as a buffer between the actual img and the edges of the div, element, window, etc. */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
 
 /***Company Logo***/
