@@ -99,11 +99,27 @@ body {
 /***About headings***/
 
 #about-section-heading {
+    color: #534742;
     text-align: center;
+    padding: 0;
+    margin-top: 70px;                    /* Actual PSD measurement is approx. 70px */
+    margin-bottom: 70px;              /* Actual PSD measurement is approx. 70px */
+}
+
+.about-first-paragraph {
+    padding: 0 5%;     /* gives text equal space on left & right, and thus keeps it centered in window, while text being left-aligned */
+    margin-bottom: 30px;
 }
 
 #meet-team-heading {
     text-align: center;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.about-final-paragraph {
+    padding: 0 5%;       /* gives text equal space on left & right, and thus keeps it centered in window, while text being left-aligned */
+    margin-bottom: 70px;        /* Actual PSD space between bottom of content and end of "about" section is approx. 40px */
 }
 
 /***Team Slider CSS***/
@@ -138,6 +154,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .navLinks ul {
@@ -179,6 +196,7 @@ body {
 
 #portfolio-section-heading {
     text-align: center;
+    padding: 0;
 }
 
 
