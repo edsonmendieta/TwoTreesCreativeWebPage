@@ -138,7 +138,7 @@ body {
 .carousel-outer-container {
     width: 200px;
     height: 200px;
-    border: 5px black solid;
+    border: 3px #534742 solid;
     overflow: hidden;
 }
 
@@ -180,16 +180,16 @@ body {
     background-color: #CCCCCC;
     padding: 5px;         /*   There is nothing b/w the opening and closing li tags, so the "background-color" property won't show up since there's nothing to show up behind....adding "padding" to this element adds some size to it (previously MIA) and thus the background color shows up and it's not just a black circle (a result of the "border" property).   */
     border-radius: 50%;
-    border: black 3px solid;  /*not sure if this will be a functional size*/
+    border: #534742 3px solid;
 }
 
 .itemLinks:hover {
-    background-color: #FFFF00;
+    background-color: #87765d;
 }
 
 .itemLinks.active {
-    background-color: #333333;
-    color: #FFFFFF;
+    background-color: #534742;
+    color: #534742;
     outline-width: 7px;  /* not sure what this does...or if this will be a functional size*/
 }
 
@@ -223,7 +223,7 @@ body {
 .portfolio-carousel-outer-container {
     width: 235px;     /* Not all may be 235px wide */
     height: 135px;
-    border: 5px black solid;
+    border: 3px #534742 solid;
     overflow: hidden;
 }
 
@@ -265,15 +265,15 @@ body {
     background-color: #CCCCCC;
     padding: 5px;         /*   There is nothing b/w the opening and closing li tags, so the "background-color" property won't show up since there's nothing to show up behind....adding "padding" to this element adds some size to it (previously MIA) and thus the background color shows up and it's not just a black circle (a result of the "border" property).   */
     border-radius: 50%;
-    border: black 3px solid;  /*not sure if this will be a functional size*/
+    border: #534742 3px solid;  /*not sure if this will be a functional size*/
 }
 
 .portfolio-itemLinks:hover {
-    background-color: #FFFF00;
+    background-color: #87765d;
 }
 
 .portfolio-itemLinks.active {
-    background-color: #333333;
+    background-color: #534742;
     color: #FFFFFF;
     outline-width: 7px;  /* not sure what this does...or if this will be a functional size*/
 }
