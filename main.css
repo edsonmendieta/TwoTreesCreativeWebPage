@@ -96,6 +96,12 @@ body {
     padding: 0;
 }
 
+/***About section***/
+
+.about {
+    margin-bottom: 30px;
+}
+
 /***About headings***/
 
 #about-section-heading {
@@ -103,7 +109,7 @@ body {
     text-align: center;
     padding: 0;
     margin-top: 70px;                    /* Actual PSD measurement is approx. 70px */
-    margin-bottom: 70px;              /* Actual PSD measurement is approx. 70px */
+    margin-bottom: 50px;              /* Actual PSD measurement is approx. 70px */
 }
 
 .about-first-paragraph {
@@ -115,11 +121,11 @@ body {
     text-align: center;
     padding: 0;
     margin-bottom: 30px;
+    color: #87765d;
 }
 
 .about-final-paragraph {
     padding: 0 5%;       /* gives text equal space on left & right, and thus keeps it centered in window, while text being left-aligned */
-    margin-bottom: 70px;        /* Actual PSD space between bottom of content and end of "about" section is approx. 40px */
 }
 
 /***Team Slider CSS***/
@@ -192,11 +198,18 @@ body {
     color: #FFFFFF;
 }
 
-/***Portfolio heading***/
+/***Portfolio section***/
+
+.Portfolio {
+    padding-top: 40px;
+    background: #5c856c;
+}
 
 #portfolio-section-heading {
     text-align: center;
     padding: 0;
+    color: white;
+    margin-bottom: 50px;
 }
 
 
@@ -232,6 +245,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .portfolio-navLinks ul {
@@ -269,10 +283,17 @@ body {
     color: #FFFFFF;
 }
 
-/***Contact section heading***/
+/***Contact section***/
+
+.contactUs {
+    margin-top: 40px;
+}
 
 #contactUs-section-heading {
     text-align: center;
+    padding: 0;
+    margin-bottom: 30px;
+    color: #534742;
 }
 
 /***Form CSS***/
@@ -295,6 +316,7 @@ body {
 }
 
 .sendButton {
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 
