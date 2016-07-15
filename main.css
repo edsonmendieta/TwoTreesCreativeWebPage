@@ -1,4 +1,10 @@
 /******************************************\
+                $Imported Fonts
+\******************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);    /* Fonts used for web page differ from actual fonts in PSD since they aren't available in Google fonts and I want the majority of people to be able to see the fonts I use. */
+
+/******************************************\
                 $CSS Reset
 \******************************************/
 
@@ -83,10 +89,11 @@ body {
     text-align: center;
     top: 39%;
     color: white;
-
 }
 
 #intro {
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 700;
     text-align: center;
     line-height: 1.2;
     padding: 0;
@@ -94,6 +101,8 @@ body {
 }
 
 #intro-end-sentence {
+    font-style: italic;
+    font-size: x-large;
     text-align: center;
     padding: 0;
 }
@@ -107,6 +116,8 @@ body {
 /***About headings***/
 
 #about-section-heading {
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 700;
     color: #534742;
     text-align: center;
     padding: 0;
@@ -115,11 +126,16 @@ body {
 }
 
 .about-first-paragraph {
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
     padding: 0 5%;     /* gives text equal space on left & right, and thus keeps it centered in window, while text being left-aligned */
     margin-bottom: 30px;
 }
 
 #meet-team-heading {
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 700;
     text-align: center;
     padding: 0;
     margin-bottom: 30px;
@@ -127,6 +143,9 @@ body {
 }
 
 .about-final-paragraph {
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
     padding: 0 5%;       /* gives text equal space on left & right, and thus keeps it centered in window, while text being left-aligned */
 }
 
@@ -208,6 +227,8 @@ body {
 }
 
 #portfolio-section-heading {
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 700;
     text-align: center;
     padding: 0;
     color: white;
@@ -292,6 +313,8 @@ body {
 }
 
 #contactUs-section-heading {
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 700;
     text-align: center;
     padding: 0;
     margin-bottom: 30px;
@@ -305,6 +328,9 @@ body {
 }
 
 .emailBox {
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 400;
+    width: 168px;
     height: 25px;   /*Mobile height, actual PSD height is approx. 75px*/
     border: none;
     background: #ebebeb;
@@ -333,6 +359,9 @@ body {
 }
 
 .nameBox {
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 400;
+    width: 168px;
     height: 25px;    /*Mobile height, actual PSD height is approx. 75px*/
     border: none;
     background: #ebebeb;
@@ -341,6 +370,8 @@ body {
 }
 
 .messageBox {
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 400;
     width: 168px;
     height: 80px;
     border: none;
@@ -349,6 +380,8 @@ body {
 }
 
 .sendButton {
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 400;
     padding:  10px 20px;      /* Adjusting this adjusts the size the button */
     margin-top: 10px;
     margin-bottom: 25px;
