@@ -349,9 +349,14 @@ body {
 }
 
 .sendButton {
+    padding:  10px 20px;      /* Adjusting this adjusts the size the button */
     margin-top: 10px;
     margin-bottom: 25px;
+    color: white;
+    background: #5c856c;
+    border: none;
 }
+
 
 /***Back to Top Button***/
 
