@@ -384,7 +384,7 @@ body {
     font-weight: 400;
     padding:  10px 20px;      /* Adjusting this adjusts the size the button */
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 70px;
     color: white;
     background: #5c856c;
     border: none;
@@ -399,12 +399,9 @@ body {
 }
 
 .backToTopButton {
+    color: white;
     padding: 20px;
-    background-color: lightblue;
-}
-
-.backToTopButton span {
-
+    background-color: #ba8c48;
 }
 
 /***social media icons***/      /* courtesy of Font Awesome */
