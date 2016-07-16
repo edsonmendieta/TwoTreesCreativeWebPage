@@ -404,10 +404,42 @@ body {
     background-color: #ba8c48;
 }
 
+.backToTopButton:hover {
+    color: white;
+}
+
 /***social media icons***/      /* courtesy of Font Awesome */
 
 .socialMediaIcons {
     display: flex;
     justify-content: center;
     margin-top: 60px;
+}
+
+.socialMediaIcons a:hover {
+    color: #534742;
+}
+
+.twitterIcon {
+    color: #b7b7b7;
+    margin-right: 8px;
+}
+
+.facebookIcon {
+    color: #b7b7b7;
+    margin-right: 8px;
+}
+
+.googleplusIcon {
+    color: #b7b7b7;
+    margin-right: 8px;
+}
+
+.dribbbleIcon {
+    color: #b7b7b7;
+    margin-right: 8px;
+}
+
+.pinterestIcon {
+    color: #b7b7b7;
 }
