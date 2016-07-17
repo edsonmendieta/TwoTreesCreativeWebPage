@@ -136,3 +136,7 @@ function getSupportedPropertyName1(properties) {    // changed function name
     }
     return null;
 }
+
+$('.menu-toggle').on('click', function() {
+    $('.full-menu').toggleClass('full-menu--open');
+})

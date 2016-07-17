@@ -443,3 +443,27 @@ body {
 .pinterestIcon {
     color: #b7b7b7;
 }
+
+/*** Menu ***/
+
+.full-menu {
+    visibility: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: white;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.full-menu--open {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* menu-position */
+ /*.full-menu--middle {
+    display: table-cell;
+    vertical-align: middle;
+}*/
