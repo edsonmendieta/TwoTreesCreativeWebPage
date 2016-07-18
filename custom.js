@@ -139,6 +139,7 @@ function getSupportedPropertyName1(properties) {    // changed function name
 
 // Menu javascript
 
-$('.menu-toggle').on('click', function() {
-    $('.full-menu').toggleClass('full-menu--open');
+$('.hamburger').on('click', function() {
+    $(this).toggleClass('open');     // hamburger changes to "x"
+    $('.full-menu').toggleClass('full-menu--open');   // full-screen menu appears
 })
