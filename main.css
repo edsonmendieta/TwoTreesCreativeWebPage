@@ -462,6 +462,20 @@ body {
     opacity: 1;
 }
 
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: gold;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
 /* menu-position */
  /*.full-menu--middle {
     display: table-cell;
