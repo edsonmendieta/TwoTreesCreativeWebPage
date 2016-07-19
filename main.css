@@ -452,9 +452,9 @@ body {
     height: 100%;
     width: 100%;
     opacity: 0;
-    background-color: black;
+    background-color: #5c856c;
     -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;  /* speed of transitions for this element: speed at which this menu gets to an opacity of 1, and turns green. */
     z-index: 2;   /* makes this menu topmost, so that nothing else is visible while it's open */
 }
 
@@ -463,7 +463,30 @@ body {
     opacity: 1;
 }
 
-/* Hamburger menu styles & animation */
+.full-menu--middle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav li {
+    margin-bottom: 8%;
+}
+
+.main-nav li:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.main-nav a {
+    color: white;
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+/*** Hamburger menu styles & animation ***/
 
 .hamburger {
     position: absolute;
