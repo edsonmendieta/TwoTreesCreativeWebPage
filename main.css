@@ -452,9 +452,10 @@ body {
     height: 100%;
     width: 100%;
     opacity: 0;
-    background-color: white;
+    background-color: black;
     -webkit-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
+    z-index: 2;   /* makes this menu topmost, so that nothing else is visible while it's open */
 }
 
 .full-menu--open {    /* makes ".full-menu" visible since this class and, as a result, this styling have been added to it by the javascript the moment the user clicks the hamburger icon. */
@@ -462,12 +463,14 @@ body {
     opacity: 1;
 }
 
+/* Hamburger menu styles & animation */
+
 .hamburger {
     position: absolute;
     top: 20px;
     right: 5%;
-    width: 60px;
-    height: 45px;
+    width: 30px;
+    height: 25px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -476,14 +479,15 @@ body {
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;     /* This cursor into the little hand icon? */
+    z-index: 2;  /* keeps hamburger "button" after full-screen menu is opened */
 }
 
 .hamburger span {
     display: block;   /* each span line is now on its own line so that they are stacked */
     position: absolute;
-    height: 9px;   /* the heigh of each span line */
+    height: 5px;   /* the heigh of each span line */
     width: 100%;   /* makes the lines take up the full widh of their container */
-    background: #d3531a;    /* makes the red span lines */
+    background: white;    /* makes the red span lines */
     border-radius: 9px;    /* rounds the edges of span lines */
     opacity: 1;  /* makes sure all span lines are visible */
     left: 0;
@@ -502,7 +506,7 @@ body {
 }
 
 .hamburger span:nth-child(2) {  /* second span line */
-    top: 18px;  /* starts 9px after 1st span line ends */
+    top: 10px;  /* starts 5px after 1st span line ends */
     -webkit-transform-origin: left center;
     -moz-transorm-origin: left center;
     -o-transform-origin: left center;
@@ -510,7 +514,7 @@ body {
 }
 
 .hamburger span:nth-child(3) {  /* third span line */
-    top: 36px;   /* starts 9px after 2nd span line ends */
+    top: 20px;   /* starts 5px after 2nd span line ends */
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
@@ -522,8 +526,7 @@ body {
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);   /* rotates 1st span line down, clockwise */
-    top: -3px;    /* Adjusts the span line so "x" isn't skewed*/
-    left: 8px;
+    top: -1px;    /* moves post-rotated span line along y-axis*/
 }
 
 .hamburger.open span:nth-child(2) {  /* makes 2nd span line dissapear */
@@ -536,8 +539,7 @@ body {
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);   /* rotates 3rd span line up, counter-clockwise */
-    top: 39px;
-    left: 8px;
+    top: 20px;
 }
 
 /* menu-position */
