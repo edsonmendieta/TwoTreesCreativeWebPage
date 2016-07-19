@@ -487,11 +487,7 @@ body {
     border-radius: 9px;    /* rounds the edges of span lines */
     opacity: 1;  /* makes sure all span lines are visible */
     left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate (0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
+    -webkit-transition: .25s ease-in-out;   /* defines time transition lasts for this element */
     -moz-transition: .25s ease-in-out;
     -o-trnasition: .25s ease-in-out;
     transition: .25s ease-in-out;
@@ -521,12 +517,12 @@ body {
     transform-origin: left center;
 }
 
-.hamburger.open span:nth-child(1) {  /* rotates 1st span line down (clockwise I believe if that's the standard direction things rotate in with the transform property) */
+.hamburger.open span:nth-child(1) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: -3px;
+    transform: rotate(45deg);   /* rotates 1st span line down, clockwise */
+    top: -3px;    /* Adjusts the span line so "x" isn't skewed*/
     left: 8px;
 }
 
@@ -535,17 +531,13 @@ body {
     opacity: 0;
 }
 
-.hamburger.open span:nth-child(3) {  /* rotates 3rd span line up */
+.hamburger.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    transform: rotate(-45deg);   /* rotates 3rd span line up, counter-clockwise */
     top: 39px;
     left: 8px;
-}
-
-.hamburger:focus {
-    outline: 0;
 }
 
 /* menu-position */
