@@ -565,8 +565,61 @@ body {
     top: 20px;
 }
 
-/* menu-position */
- /*.full-menu--middle {
-    display: table-cell;
-    vertical-align: middle;
-}*/
+
+
+
+/*** PSD styles ***/
+
+@media(min-width:1280px) {
+
+    p {
+        color: skyblue;
+    }
+
+    .welcome {  /* PSD measurement taken from: top of logo - bottom end of background image */
+        position: relative;
+        background-image: none;
+        background: beige;
+        height: 813px;
+        top: 60px;    /* where this section begins in PSD */
+    }
+
+    .full-menu {
+        visibility: hidden;
+    }
+
+    .content {
+        visibility: hidden;
+    }
+
+    .welcome-text { /*PSD measurement taken from: top of background image - bottom of background image */
+        position: absolute;   /* positioned absolutely in ".welcome container" */
+        height: 651px;
+        top: 162px;   /* PSD space between top of ".welcome" section and start of this section */
+        color: white;
+        background-image: url(images/Untitled-billybonds.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #intro {
+        position: relative;
+        top: 237px;
+        font-size: 350%;
+        margin-bottom: 11px;
+    }
+
+    #intro-end-sentence {
+        position: relative;
+        top: 237px;    /* Why it's the same distance from top as the text above it: "#intro" has a margin-bottom, so it will put space between itself and whatever is under it automatically. Also, if I were to put it at the pixel distance from the PSD, then there would be a large gap between the two text sections. Why? Because the font & font-size I use on this actual web-page differs from the PSD, so the amount of pixel height they take up are different. For this reason, I'm going to approximate the text position and make the font-size bigger than what I use for the mobile version. */
+        font-size: 275%;
+    }
+
+    .companyLogo {
+        margin: 0;
+    }
+
+
+
+
+}   /** media query closing bracket **/
