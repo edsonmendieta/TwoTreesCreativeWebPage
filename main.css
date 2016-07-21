@@ -584,7 +584,7 @@ body {
         top: 60px;    /* where this section begins in PSD */
     }
 
-    .full-menu {
+    .full-menu {    /* I essentially centered the nav with 5 spaces between the anchor text and "|" sign since that's what was done in photoshop for the most part. */
         position: absolute;
         top: 128px;  /* this is 3px less than actual PSD starting point from the top of the ".welcome" container since there is space between the top of this container and the top of the child container in which the characters are actually flush with the top of the container. So, putting this container at the actual 131px would put the nav letters lower than they actually are in the PSD document. */
         background: transparent;  /* gets rid of the green background from the full-screen mobile version, so that rest of page is visible */
@@ -608,6 +608,24 @@ body {
 
     .main-nav a span:hover {
         background: #ba8c48;
+        padding: 1px 8px 3px 8px;
+        border-radius: 3px;
+    }
+
+    .main-nav:nth-child(1) a span {
+        display: inline-block;
+        padding-right: 18.928px;    /* After some calculations, each of the 5 spaces between each anchor word and the "|" character came out to be 4.732px. So, I added 4 spaces worth (18.928px) padding on the left and/or right side (whatever was needed) to re-create the 5 spaces in the PSD. I added 4 spaces worth and not 5 becuse there was 1 space already from using the "|" character. I chose to use this method instead of four "&nbsp;"'s since that seemed "messy". */
+    }
+
+    .main-nav:nth-child(2) a span {
+        display: inline-block;
+        padding-left: 18.928px;
+        padding-right: 18.928px;
+    }
+
+    .main-nav:nth-child(3) a span {
+        display: inline-block;
+        padding-left: 18.928px;
     }
 
     .content {
