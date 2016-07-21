@@ -570,7 +570,7 @@ body {
 
 /*** PSD styles ***/
 
-@media(min-width:1280px) {
+@media(min-width: 1280px) {
 
     p {
         color: skyblue;
@@ -585,11 +585,33 @@ body {
     }
 
     .full-menu {
-        visibility: hidden;
+        position: absolute;
+        top: 128px;  /* this is 3px less than actual PSD starting point from the top of the ".welcome" container since there is space between the top of this container and the top of the child container in which the characters are actually flush with the top of the container. So, putting this container at the actual 131px would put the nav letters lower than they actually are in the PSD document. */
+        background: transparent;  /* gets rid of the green background from the full-screen mobile version, so that rest of page is visible */
+        visibility: visible;  /* makes it visible, as opposed to it's non-visible default state in the mobile version */
+        opacity: 1;    /* actually makes the menu visible to the naked eye, since its default state is an opacity of 0 for the mobile version */
+        height: 50px;
+    }
+
+    .main-nav {
+        display: flex;
+    }
+
+    .main-nav a {
+        font-size: large;
+        color: #5c856c;
+    }
+
+    .main-nav a:hover {
+        color: white;
+    }
+
+    .main-nav a span:hover {
+        background: #ba8c48;
     }
 
     .content {
-        visibility: hidden;
+        visibility: hidden;   /* hides the hamburger shape & functionality built for mobile version */
     }
 
     .welcome-text { /*PSD measurement taken from: top of background image - bottom of background image */
@@ -604,9 +626,9 @@ body {
 
     #intro {
         position: relative;
-        top: 237px;
+        top: 237px;   /* PSD measurement */
         font-size: 350%;
-        margin-bottom: 11px;
+        margin-bottom: 11px;   /* PSD space */
     }
 
     #intro-end-sentence {
