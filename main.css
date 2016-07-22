@@ -603,29 +603,85 @@ body {
     }
 
     .main-nav a:hover {
-        color: white;
+        color: white;    /* makes main-navigation text white in a hover state as in PSD */
     }
 
-    .main-nav a span:hover {
+    .main-nav a:hover .nav-vertical-line-character:hover {   /******* Trying to get vertical line to not turn white on anchor hover state ****************/
+        color:  #5c856c;
+    }
+
+    /*.main-nav a span:hover {
         background: #ba8c48;
         padding: 1px 8px 3px 8px;
         border-radius: 3px;
+    }*/
+
+    .local-link-1 span {
+        margin-top: 1px;
+        margin-left: 18.928px;
+        margin-right: 18.928px;    /* After some calculations, each of the 5 spaces between each anchor word and the "|" character came out to be 4.732px. So, I added 4 spaces worth (18.928px) of margin on the left and/or right side (whatever was needed) to re-create the 5 spaces in the PSD. I added 4 spaces worth and not 5 becuse there was 1 space already from using the "|" character. I chose to use this method instead of four "&nbsp;"'s since that seemed "messy". */
+        margin-bottom: 3px;
     }
 
-    .main-nav:nth-child(1) a span {
-        display: inline-block;
-        padding-right: 18.928px;    /* After some calculations, each of the 5 spaces between each anchor word and the "|" character came out to be 4.732px. So, I added 4 spaces worth (18.928px) padding on the left and/or right side (whatever was needed) to re-create the 5 spaces in the PSD. I added 4 spaces worth and not 5 becuse there was 1 space already from using the "|" character. I chose to use this method instead of four "&nbsp;"'s since that seemed "messy". */
+    .local-link-1 span:hover {
+        padding-top: 1px;
+        padding-left: 8px;     /* this padding is used for a background-color cushion as in the PSD */
+        padding-right: 8px;
+        padding-bottom: 3px;
+        background: #ba8c48;
+        margin-left: 10.928px;     /* decreased margin for this hover since padding was added. This keeps the text in it's exact same place as in the default state of this element */
+        margin-right: 10.928px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
-    .main-nav:nth-child(2) a span {
+    /*.main-nav:nth-child(2) a span {    ********   Why is this selector not working?   **********
         display: inline-block;
         padding-left: 18.928px;
         padding-right: 18.928px;
     }
 
-    .main-nav:nth-child(3) a span {
+    .main-nav:nth-child(3) a span {      ********   Why is this selector not working?   **********
         display: inline-block;
         padding-left: 18.928px;
+    }*/
+
+    .local-link-2 span {
+        margin-top: 1px;    /* placeholder for "padding-top" property in the hover state of this element to prevent visible shifting */
+        margin-left: 18.928px;
+        margin-right: 18.928px;
+        margin-bottom: 3px;     /* placeholder for "padding-bottom" property in the hover state of this element to prevent visible shifting */
+    }
+
+    .local-link-2 span:hover {
+        padding-top: 1px;
+        padding-left: 8px;     /* this padding is used for a background-color cushion as in the PSD */
+        padding-right: 8px;
+        padding-bottom: 3px;
+        background: #ba8c48;
+        margin-left: 10.928px;     /* decreased margin for this hover since padding was added. This keeps the text in it's exact same place as in the default state of this element */
+        margin-right: 10.928px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .local-link-3 span {
+        margin-top: 1px;    /* placeholder for "padding-top" property in the hover state of this element to prevent visible shifting */
+        margin-left: 18.928px;
+        margin-right: 18.928px;
+        margin-bottom: 3px;     /* placeholder for "padding-bottom" property in the hover state of this element to prevent visible shifting */
+    }
+
+    .local-link-3 span:hover {
+        padding-top: 1px;
+        padding-left: 8px;     /* this padding is used for a background-color cushion as in the PSD */
+        padding-right: 8px;
+        padding-bottom: 3px;
+        background: #ba8c48;
+        margin-left: 10.928px;     /* decreased margin for this hover since padding was added. This keeps the text in it's exact same place as in the default state of this element */
+        margin-right: 10.928px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .content {
