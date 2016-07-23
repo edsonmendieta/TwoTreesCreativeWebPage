@@ -602,11 +602,7 @@ body {
         color: #5c856c;
     }
 
-    .main-nav a:hover {
-        color: white;    /* makes main-navigation text white in a hover state as in PSD */
-    }
-
-    .main-nav a:hover .unique-hover-color {     /* selector using a span element class that  keeps "|" character green (doesn't turn white like rest of textual characters) when "a" element is hovered over */
+    .unique-hover-color {     /* selector using a span element class that  keeps "|" character green (doesn't turn white like rest of textual characters) when "a" element is hovered over */
         color: #5c856c;
     }
 
@@ -618,6 +614,7 @@ body {
     }
 
     .local-link-1 span:hover {
+        color: white;
         padding-top: 1px;
         padding-left: 8px;     /* this padding is used for a background-color cushion as in the PSD */
         padding-right: 8px;
@@ -648,6 +645,7 @@ body {
     }
 
     .local-link-2 span:hover {
+        color: white;
         padding-top: 1px;
         padding-left: 8px;     /* this padding is used for a background-color cushion as in the PSD */
         padding-right: 8px;
@@ -667,6 +665,7 @@ body {
     }
 
     .local-link-3 span:hover {
+        color: white;
         padding-top: 1px;
         padding-left: 8px;     /* this padding is used for a background-color cushion as in the PSD */
         padding-right: 8px;
