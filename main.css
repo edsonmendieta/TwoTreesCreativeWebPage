@@ -606,15 +606,9 @@ body {
         color: white;    /* makes main-navigation text white in a hover state as in PSD */
     }
 
-    .main-nav a:hover .nav-vertical-line-character:hover {   /******* Trying to get vertical line to not turn white on anchor hover state ****************/
-        color:  #5c856c;
+    .main-nav a:hover .unique-hover-color {     /* selector using a span element class that  keeps "|" character green (doesn't turn white like rest of textual characters) when "a" element is hovered over */
+        color: #5c856c;
     }
-
-    /*.main-nav a span:hover {
-        background: #ba8c48;
-        padding: 1px 8px 3px 8px;
-        border-radius: 3px;
-    }*/
 
     .local-link-1 span {
         margin-top: 1px;
