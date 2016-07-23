@@ -593,7 +593,7 @@ body {
         height: 50px;
     }
 
-    .main-nav {
+    .main-nav {               /*  The nav is centered but the text isn't fully centered so that the middle of the word "Portfolio is smack dab in the middle of the page. Why: the nav isn't fully centered this way in the PSD either. AND, if I were to fully center it like I just described, each word wouldn't be the exact, same distance from the vertical '|' bars as they are now & as they are in the PSD.  */
         display: flex;
     }
 
