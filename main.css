@@ -624,6 +624,8 @@ body {
         margin-right: 10.928px;
         margin-top: 0px;
         margin-bottom: 0px;
+        border-radius: 8%;
+        box-shadow: 1px 2px #e9e8e8;  /* PSD drop-shadow measurements */
     }
 
     /*.main-nav:nth-child(2) a span {    ********   Why is this selector not working?   **********
@@ -655,6 +657,8 @@ body {
         margin-right: 10.928px;
         margin-top: 0px;
         margin-bottom: 0px;
+        border-radius: 8%;
+        box-shadow: 1px 2px #e9e8e8;
     }
 
     .local-link-3 span {
@@ -675,6 +679,8 @@ body {
         margin-right: 10.928px;
         margin-top: 0px;
         margin-bottom: 0px;
+        border-radius: 8%;
+        box-shadow: 1px 2px #e9e8e8;
     }
 
     .content {
