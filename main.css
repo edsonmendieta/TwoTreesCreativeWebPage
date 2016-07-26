@@ -9,7 +9,7 @@
 \******************************************/
 
 /* basic elements */
-body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+body, html, section, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
 li, dl, dt, dd, form, a, fieldset, th, td
 {
 margin: 0; padding: 0; border: 0; outline: none;
@@ -576,13 +576,21 @@ body {
         color: skyblue;
     }
 
+    /****************
+      $Welcome section
+    *****************/
+
     .welcome {  /* PSD measurement taken from: top of logo - bottom end of background image */
         position: relative;
         background-image: none;
         background: beige;
         height: 813px;
-        top: 60px;    /* where this section begins in PSD */
+        top: 60px;    /* where this section begins in PSD. Placing this section 60px from the top OF its normal placement causally pushes it DOWN 60px, and thus, the section now has a bottom POSITION of - 60px. Why does this matter? : Sections following this section will place themselves beneath it in relation to the ORIGINAL position of the bottom edge of the container/section/div. That means that they will be SEEMINGLY overlapping!!! How do you fix this if you want to change the positioning? : Compensate for the negative bottom positioning of the preceding section/div/container by pushing the following sections down from the "top" by the same amount the first section/div/container was :)  In this case that would mean giving the following sections a position of "realitive" and "top" property value of 60px. */
     }
+
+    /*********
+        $menu
+     *********/
 
     .full-menu {    /* I essentially centered the nav with 5 spaces between the anchor text and "|" sign since that's what was done in photoshop for the most part. */
         position: absolute;
@@ -627,17 +635,6 @@ body {
         border-radius: 8%;
         box-shadow: 1px 2px #e9e8e8;  /* PSD drop-shadow measurements */
     }
-
-    /*.main-nav:nth-child(2) a span {    ********   Why is this selector not working?   **********
-        display: inline-block;
-        padding-left: 18.928px;
-        padding-right: 18.928px;
-    }
-
-    .main-nav:nth-child(3) a span {      ********   Why is this selector not working?   **********
-        display: inline-block;
-        padding-left: 18.928px;
-    }*/
 
     .local-link-2 span {
         margin-top: 1px;    /* placeholder for "padding-top" property in the hover state of this element to prevent visible shifting */
@@ -687,8 +684,12 @@ body {
         visibility: hidden;   /* hides the hamburger shape & functionality built for mobile version */
     }
 
+    /****************
+        $intro-headings
+     ****************/
+
     .welcome-text { /*PSD measurement taken from: top of background image - bottom of background image */
-        position: absolute;   /* positioned absolutely in ".welcome container" */
+        position: relative;   /* positioned absolutely in ".welcome container" */
         height: 651px;
         top: 162px;   /* PSD space between top of ".welcome" section and start of this section */
         color: white;
@@ -710,9 +711,58 @@ body {
         font-size: 275%;
     }
 
+    .companyLogo-container {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
     .companyLogo {
         margin: 0;
     }
+
+
+
+
+    /****************
+      $About section
+    *****************/
+
+
+    .about {
+        position: relative;
+        top: 60px;
+    }
+
+
+
+    /****************
+      $Portfolio section
+    *****************/
+
+
+    .Portfolio {
+        position: relative;
+        top: 60px;
+    }
+
+
+
+    /****************
+      $Contact section
+    *****************/
+
+    .contactUs {
+        position: relative;
+        top: 60px;
+    }
+
+
+
+
+
 
 
 
