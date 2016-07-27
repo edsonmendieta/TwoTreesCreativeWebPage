@@ -732,8 +732,52 @@ body {
 
 
     .about {
+        display: table;
         position: relative;
         top: 60px;
+        height: 552px;
+    }
+
+    #about-section-heading {
+        margin-top: 73px;
+        margin-bottom: 77px;
+    }
+
+    .about-first-paragraph {
+        margin-bottom: 36px;
+    }
+
+    #meet-team-heading {
+    }
+
+    .team-carousel-outmost-container {
+        display: table-footer-group;
+    }
+
+    .carousel-outer-container {
+        width: 100%;     /* All photos become visible */
+        /*height: 500px;*/
+        border: 3px #534742 solid;
+        overflow: hidden;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        /*height: 500px;*/
+        margin: 0;
+        font-size: 0;           /*Gets rid of the space between the img elements, because a space with a size 0 font means:                                                 no space. Why the space? Img elements have a default CSS style of "display: inline-block", which puts spaces b/w the elements set on that LINE (like a sentence). */
+        transform: translate3d(0, 0, 0);
+        transition: transform .5s ease-in-out;
+    }
+
+    .image1 {
+        /*display: block;*/
+    }
+
+
+    .navLinks {
+        display: none;
+        margin: 0;
     }
 
 
