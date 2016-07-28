@@ -306,6 +306,11 @@ body {
     color: #FFFFFF;
 }
 
+.fa-stack {
+    display: none;
+    visibility: hidden;
+}
+
 /***Contact section***/
 
 .contactUs {
@@ -869,14 +874,45 @@ body {
     .portfolio-navLinks {
         display: none;
     }
+    /****************
+        $Arrow Buttons
+     ****************/
+     .fa-stack {
+         visibility: visible;
+     }
 
-    .fa-chevron-circle-left {
+    .left-arrow-button {
+        left: 110px;
+        margin-top: 39px;
+    }
+
+    .left-arrow-img {
+        color: #ba8c48;
+    }
+
+    .right-arrow-img {
         color: #ba8c48;
     }
 
     .button-circle-background {
         color: white;
     }
+
+    .right-arrow-button {
+        left: 1040px;
+        margin-top: 39px;
+    }
+
+    .left-arrow-button-2 {
+        top: 177px;
+        right: 28px;
+    }
+
+    .right-arrow-button-2 {
+        top: 177px;
+        left: 904px;
+    }
+
 
 
 
