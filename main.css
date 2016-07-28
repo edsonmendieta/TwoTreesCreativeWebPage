@@ -829,14 +829,37 @@ body {
 
     #portfolio-section-heading {
         margin-bottom: 58px;
+        font-size: 275%;
+    }
+
+    .portfolio-carousel-outmost-container {
+        position: absolute;
+        left: 140px;
+        width: 1000px;
+        height: 300px;
     }
 
     .portfolio-carousel-outer-container {
-        width: 100%;
+        width: 1000px;
+        height: 300px;
+        border: none;
     }
 
     .portfolio-carousel-inner {
-        /*width: 100%;*/
+        width: 1000px;
+        height: 300px;
+    }
+
+    .portfolio-sliding-image {
+        padding-right: 20px;
+    }
+
+    .portfolio-image-4, .portfolio-image-8 {
+        padding-right: 0;
+    }
+
+    .portfolio-image-1, .portfolio-image-2, .portfolio-image-3, .portfolio-image-4 {
+        padding-bottom: 30px;
     }
 
     .portfolio-navLinks {
