@@ -138,7 +138,7 @@ body {
     font-weight: 700;
     text-align: center;
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 30px;    /* PSD measurement */
     color: #87765d;
 }
 
@@ -568,7 +568,15 @@ body {
 
 
 
-/*** PSD styles ***/
+/******************************************************************************************************
+
+
+                                                                                    Media query PSD Styles
+
+
+******************************************************************************************************/
+
+
 
 @media(min-width: 1280px) {
 
@@ -732,7 +740,6 @@ body {
 
 
     .about {
-        display: table;
         position: relative;
         top: 60px;
         height: 552px;
@@ -743,6 +750,10 @@ body {
         margin-bottom: 77px;
     }
 
+    .about-text-wrapper {
+        float: left;
+    }
+
     .about-first-paragraph {
         margin-bottom: 36px;
     }
@@ -750,8 +761,12 @@ body {
     #meet-team-heading {
     }
 
+    .about-final-paragraph {
+        /*margin-top: -66px;             /* After using "display: table" for this about section to move this paragraphy directly under the "Meet the Team" header, there was an weird whitespace between them (I noticed that when I turned "display: table" off in the debugger, this space wouldn't exist b/w any of the elements in this section; but of course, the elements would no longer be in the order I wanted them to be in.).    Solution: I added a negative margin to the top of this element in order get rid of the space between this paragraph & the "Meet the Team".  Note: The debugger shows this element having a -66px top margin & NO bottom margin (as it should) in the box model; but when you hover over it with the "inspect" arrow, it seems to have a bottom margin. */*/
+    }
+
     .team-carousel-outmost-container {
-        display: table-footer-group;
+
     }
 
     .carousel-outer-container {
@@ -765,7 +780,7 @@ body {
         width: 100%;
         /*height: 500px;*/
         margin: 0;
-        font-size: 0;           /*Gets rid of the space between the img elements, because a space with a size 0 font means:                                                 no space. Why the space? Img elements have a default CSS style of "display: inline-block", which puts spaces b/w the elements set on that LINE (like a sentence). */
+        font-size: 0;           /*Gets rid of the space between the img elements, because a space with a size 0 font means: no space. Why the space? Img elements have a default CSS style of "display: inline-block", which puts spaces b/w the elements set on that LINE (like a sentence). */
         transform: translate3d(0, 0, 0);
         transition: transform .5s ease-in-out;
     }
