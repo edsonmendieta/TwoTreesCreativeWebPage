@@ -822,6 +822,24 @@ body {
     .Portfolio {
         position: relative;
         top: 60px;
+        height: 510px;      /* Actual PSD height is 550px, however, section has a top padding of 60px (that is part of the background-color style), so I subtracted that amount from the height of this section to match the PSD height exactly (else, this section would be 60px taller than the PSD measurement). */
+        padding-top: 60px;
+    }
+
+    #portfolio-section-heading {
+        margin-bottom: 58px;
+    }
+
+    .portfolio-carousel-outer-container {
+        width: 100%;
+    }
+
+    .portfolio-carousel-inner {
+        /*width: 100%;*/
+    }
+
+    .portfolio-navLinks {
+        display: none;
     }
 
 
