@@ -854,6 +854,10 @@ body {
         padding-right: 20px;
     }
 
+    .portfolio-image-1 {
+        /*background-image: url();*/
+    }
+
     .portfolio-image-4, .portfolio-image-8 {
         padding-right: 0;
     }
@@ -864,6 +868,14 @@ body {
 
     .portfolio-navLinks {
         display: none;
+    }
+
+    .fa-chevron-circle-left {
+        color: #ba8c48;
+    }
+
+    .button-circle-background {
+        color: white;
     }
 
 
