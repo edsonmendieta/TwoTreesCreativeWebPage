@@ -935,6 +935,30 @@ body {
 
 
 
+    /****************
+      $Back to top button
+    *****************/
+
+    .top-button {
+        position: relative;
+        top: 60px;
+    }
+
+
+
+
+    /****************
+      $Footer
+    *****************/
+
+    footer {
+        position: relative;
+        top: 60px;
+    }
+
+
+
+
 
 
 
