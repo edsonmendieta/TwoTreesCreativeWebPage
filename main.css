@@ -932,6 +932,38 @@ body {
         float: left;
     }
 
+    #contactUs-section-heading {
+        margin-bottom: 22px;
+    }
+
+    .contact-form-section {
+        position: absolute;
+        width: 405px;
+        height: 357px;
+        right: 0px;
+    }
+
+    .emailBox {
+        width: 405px;
+        height: 76px;
+        padding-bottom: 0;
+        margin-bottom: 16px;
+    }
+
+    .nameBox {
+        width: 405px;
+        height: 76px;
+        padding-bottom: 0;
+        margin-bottom: 21px;
+    }
+
+    .messageBox {
+        width: 405px;
+        height: 168px;
+        padding-bottom: 0;
+        margin-bottom: 21px;
+    }
+
 
 
 
