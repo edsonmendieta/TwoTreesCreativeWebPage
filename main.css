@@ -941,6 +941,7 @@ body {
         width: 405px;
         height: 357px;
         right: 0px;
+        line-height: 0;     /* Without this declaration, there is an un-wanted space between the bottom-margin of this section and the top-padding of the button under it. */
     }
 
     .emailBox {
@@ -961,7 +962,11 @@ body {
         width: 405px;
         height: 168px;
         padding-bottom: 0;
-        margin-bottom: 21px;
+        margin-bottom: 20px;
+    }
+
+    .sendButton {
+        margin-top: 0;
     }
 
 
