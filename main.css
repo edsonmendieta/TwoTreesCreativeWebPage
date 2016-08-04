@@ -930,9 +930,14 @@ body {
 
     .googleMap {
         float: left;
+        position: relative;
+        left: 140px;
+        width: 575px;
+        height: 536px;
     }
 
     #contactUs-section-heading {
+        margin-top: 35px;
         margin-bottom: 22px;
     }
 
@@ -942,31 +947,38 @@ body {
         height: 357px;
         right: 0px;
         line-height: 0;     /* Without this declaration, there is an un-wanted space between the bottom-margin of this section and the top-padding of the button under it. */
+        right: 140px;
     }
 
     .emailBox {
-        width: 405px;
+        width: 400px;      /* PSD width is 405px, but I subtracted 5px to adjust for the 5px of padding I added on the left (in order to push the text inward). */
         height: 76px;
         padding-bottom: 0;
         margin-bottom: 16px;
     }
 
     .nameBox {
-        width: 405px;
+        width: 400px;
         height: 76px;
         padding-bottom: 0;
         margin-bottom: 21px;
     }
 
     .messageBox {
-        width: 405px;
+        width: 400px;
         height: 168px;
         padding-bottom: 0;
+        padding-right: 0;
         margin-bottom: 20px;
     }
 
     .sendButton {
+        position: absolute;
+        right: 0;
         margin-top: 0;
+        padding: 0;
+        height: 76px;
+        width: 148px;
     }
 
 
