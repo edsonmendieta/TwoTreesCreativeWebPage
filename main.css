@@ -921,14 +921,14 @@ body {
     *****************/
 
     .contactUs {
-        height: 649px;
-        border: 3px solid black;
+        height: 550px;
         position: relative;
-        top: 60px;
+        top: -10px;
         margin-top: 0;
     }
 
     .googleMap {
+        top: 0;
         float: left;
         position: relative;
         left: 140px;
@@ -937,12 +937,15 @@ body {
     }
 
     #contactUs-section-heading {
+        position: relative;
+        top: 35px;      /* this puts the heading exactly 35px south of the top-most part of this section, which is how it is in the PSD */
         font-size: 275%;
-        margin-top: 35px;
+        margin-top: 70px;
         margin-bottom: 22px;
     }
 
     .contact-form-section {
+        top: 93px;      /* was orginally 66px, but I added 35px to it to adjust for the "top: 35px" I added to the heading above it. Then, I subracted pixels until the bottom of this section's send button was flush with the bottom of the section (since that button is the southmost element of this section), because that is how it is in the PSD */
         position: absolute;
         width: 405px;
         height: 357px;
@@ -1021,8 +1024,13 @@ body {
     *****************/
 
     footer {
+        height: 99px;
         position: relative;
-        top: 60px;
+        top: -10px;     /* makes top of section flush with bottom of section above it */
+    }
+
+    .socialMediaIcons {
+        margin-top: 0;
     }
 
 
