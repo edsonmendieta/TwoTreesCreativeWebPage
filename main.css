@@ -937,6 +937,7 @@ body {
     }
 
     #contactUs-section-heading {
+        font-size: 275%;
         margin-top: 35px;
         margin-bottom: 22px;
     }
@@ -951,6 +952,7 @@ body {
     }
 
     .emailBox {
+        font-weight: bold;
         width: 400px;      /* PSD width is 405px, but I subtracted 5px to adjust for the 5px of padding I added on the left (in order to push the text inward). */
         height: 76px;
         padding-bottom: 0;
@@ -958,6 +960,7 @@ body {
     }
 
     .nameBox {
+        font-weight: bold;
         width: 400px;
         height: 76px;
         padding-bottom: 0;
@@ -965,6 +968,7 @@ body {
     }
 
     .messageBox {
+        font-weight: bold;
         width: 400px;
         height: 168px;
         padding-bottom: 0;
@@ -979,6 +983,11 @@ body {
         padding: 0;
         height: 76px;
         width: 148px;
+        font-size: 175%;
+    }
+
+    .send-button-arrow {
+        padding-left: 5px;
     }
 
 
