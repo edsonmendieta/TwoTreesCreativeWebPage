@@ -997,9 +997,20 @@ body {
       $Back to top button
     *****************/
 
-    .top-button {
-        position: relative;
-        top: 60px;
+    .backToTopButton {
+        float: right;
+        position: absolute;
+        bottom: -1.5px;    /* with a value of 0, there was still space between this element and the bottom of the page */
+        right: 140px;
+        height: 64px;
+        width: 66px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .top-button-arrow:before {   /* font-awesome style for this property was overriding my personal style when I wasn't using ":before" */
+        line-height: 66px;    /* making the value of this property equal to the height of the element centers the text vertically (font-awesome icons are text) */
     }
 
 
