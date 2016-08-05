@@ -407,15 +407,26 @@ body {
 
 /***Back to Top Button***/
 
-.top-button {
+.backToTopButton-container {
+    width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 45px;
 }
 
 .backToTopButton {
+    display: flex;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
     color: white;
-    padding: 20px;
+    padding: 0;
     background-color: #ba8c48;
+}
+
+.top-button-arrow:before {
+    line-height: 75px;
+    font-size: 200%;
 }
 
 .backToTopButton:hover {
