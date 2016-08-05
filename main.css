@@ -314,6 +314,7 @@ body {
 /***Contact section***/
 
 .contactUs {
+    width: 100%;
     margin-top: 40px;
 }
 
@@ -324,6 +325,10 @@ body {
     padding: 0;
     margin-bottom: 30px;
     color: #534742;
+}
+
+.googleMap {
+    width: 100%;
 }
 
 /***Form CSS***/
@@ -343,7 +348,7 @@ body {
     margin-bottom: 5px;
 }
 
- /* The declarations below change the color of placeholder text of input elements */
+ /* The rules below change the color of placeholder text of input elements */
 
 ::-webkit-input-placeholder {
    color: black;
@@ -385,14 +390,18 @@ body {
 }
 
 .sendButton {
+    display: block;
     font-family: 'Droid Sans' , sans-serif;
     font-weight: 400;
+    margin: 10px auto 30px auto;
     padding:  10px 20px;      /* Adjusting this adjusts the size the button */
-    margin-top: 10px;
-    margin-bottom: 70px;
     color: white;
     background: #5c856c;
     border: none;
+}
+
+.send-button-arrow {
+    padding-left: 5px;
 }
 
 

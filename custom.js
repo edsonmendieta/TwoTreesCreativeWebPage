@@ -1,6 +1,6 @@
 // Manual image slider js - from this tutorial: https://www.kirupa.com/html5/creating_a_sweet_content_slider.htm
 
-if ( $(window).width() < 1280) {   // if the screen width is less than 1280px, than this javascript is activated 
+if ( $(window).width() < 1280) {   // if the screen width is less than 1280px, than this javascript is activated
     // just querying the DOM...like a boss!
     var links = document.querySelectorAll(".itemLinks");
     var wrapper = document.querySelector(".carousel-inner");
@@ -148,9 +148,18 @@ $('.hamburger').on('click', function() {
     $('.full-menu').toggleClass('full-menu--open');   // full-screen menu appears
 })
 
+
 // Main-nav jquery
 
 $('.local-link').on('click', function() {
     $('.full-menu').toggleClass('full-menu--open');   // when a menu link is clicked, the full-screen menu fades away so that the user can see the page again (thus the new section they're taken to).
     $('.hamburger').toggleClass('open');  // when a menu link is clicked, the "x" menu shape turns back into a hamburger shape.
 })
+
+
+//Swap Position of Contact-Us elements
+
+if ( $(window).width() < 965) {
+    $('#contactUs-section-heading').insertBefore('.googleMap');
+    $('.contact-form-section').insertBefore('.googleMap');
+}
