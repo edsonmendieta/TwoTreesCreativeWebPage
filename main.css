@@ -586,7 +586,7 @@ body {
 @media(min-width: 1280px) {
 
     p {
-        color: skyblue;
+        color: #534742;
     }
 
     /****************
@@ -596,7 +596,6 @@ body {
     .welcome {  /* PSD measurement taken from: top of logo - bottom end of background image */
         position: relative;
         background-image: none;
-        background: beige;
         height: 813px;
         top: 60px;    /* where this section begins in PSD. Placing this section 60px from the top OF its normal placement causally pushes it DOWN 60px, and thus, the section now has a bottom POSITION of - 60px. Why does this matter? : Sections following this section will place themselves beneath it in relation to the ORIGINAL position of the bottom edge of the container/section/div. That means that they will be SEEMINGLY overlapping!!! How do you fix this if you want to change the positioning? : Compensate for the negative bottom positioning of the preceding section/div/container by pushing the following sections down from the "top" by the same amount the first section/div/container was :)  In this case that would mean giving the following sections a position of "realitive" and "top" property value of 60px. */
     }
@@ -1030,7 +1029,13 @@ body {
     }
 
     .socialMediaIcons {
+        display: inline;
+        bottom: 21px;
         margin-top: 0;
+        width: 229px;
+        position: absolute;
+        left: 140px;
+        font-size: 150%;
     }
 
 
