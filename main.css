@@ -329,6 +329,7 @@ body {
 
 .googleMap {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 /***Form CSS***/
@@ -511,6 +512,10 @@ body {
     font-size: xx-large;
 }
 
+.unique-hover-color {
+    display: none;
+}
+
 /*** Hamburger menu styles & animation ***/
 
 .hamburger {
@@ -643,6 +648,7 @@ body {
     }
 
     .unique-hover-color {     /* selector using a span element class that  keeps "|" character green (doesn't turn white like rest of textual characters) when "a" element is hovered over */
+        display: inline;      /* I first used the declaration "visibility: visible; (in order to override the default declaration of "display: none;" for this class), but it wasn't overriding it. However, this works well. */
         color: #5c856c;
     }
 
@@ -953,6 +959,7 @@ body {
         left: 140px;
         width: 575px;
         height: 536px;
+        margin-bottom: 0;
     }
 
     #contactUs-section-heading {
