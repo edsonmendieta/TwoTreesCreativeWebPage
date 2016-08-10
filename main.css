@@ -598,6 +598,22 @@ body {
 
 
 
+@media(min-width: 529px) {
+
+    .emailBox, .nameBox, .mesageBox {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+}
+
+
+
+
 /******************************************************************************************************
 
 
@@ -1074,3 +1090,27 @@ body {
 
 
 }   /** media query closing bracket **/
+
+
+
+
+@media(min-width: 1290px) {
+
+    .portfolio-carousel-outmost-container {
+        width: auto;               /* helps to center element */
+        position: relative;      /* overrides absolute positioning css declaration */
+        padding-left: 10%;    /* these padding styles keep the element centered on the page */
+        padding-right: 10%;
+        left: 0;                        /* overrides previous css declaration (left: 140px) in order for above rules to work well on centering element */
+    }
+
+
+    .button-circle-background:before, .left-arrow-img:before, .right-arrow-img:before {
+        display: none;
+    }
+
+
+
+
+
+}
