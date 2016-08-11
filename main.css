@@ -340,7 +340,7 @@ body {
 
 .emailBox {
     font-family: 'Droid Sans' , sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     width: 168px;
     height: 25px;   /*Mobile height, actual PSD height is approx. 75px*/
     border: none;
@@ -348,6 +348,7 @@ body {
     padding-left: 5px;         /* This adds space between the text and left side of input element */
     margin-bottom: 5px;
 }
+
 
  /* The rules below change the color of placeholder text of input elements */
 
@@ -371,7 +372,7 @@ body {
 
 .nameBox {
     font-family: 'Droid Sans' , sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     width: 168px;
     height: 25px;    /*Mobile height, actual PSD height is approx. 75px*/
     border: none;
@@ -382,7 +383,7 @@ body {
 
 .messageBox {
     font-family: 'Droid Sans' , sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     width: 168px;
     height: 80px;
     border: none;
@@ -600,12 +601,24 @@ body {
 
 @media(min-width: 529px) {
 
-    .emailBox, .nameBox, .mesageBox {
+    .emailBox, .nameBox, .messageBox {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        width: 250px;
+        height: 40px;
     }
 
+    .messageBox {
+        height: 80px;
+    }
+
+    .sendButton {
+        height: 30px;
+        width: 148px;
+        font-size: 175%;
+        padding-bottom: 40px;
+    }
 
 
 
@@ -1052,17 +1065,21 @@ body {
     }
 
     .googleMap {
+        display: block;
         top: 0;
         float: left;
         position: relative;
         left: 140px;
         width: 575px;
         height: 536px;
+        margin-top: 0;
         margin-bottom: 0;
     }
 
     #contactUs-section-heading {
+        display: block;
         position: relative;
+        width: auto;
         top: 35px;      /* this puts the heading exactly 35px south of the top-most part of this section, which is how it is in the PSD */
         font-size: 275%;
         margin-top: 70px;
@@ -1070,6 +1087,7 @@ body {
     }
 
     .contact-form-section {
+        display: block;
         top: 93px;      /* was orginally 66px, but I added 35px to it to adjust for the "top: 35px" I added to the heading above it. Then, I subracted pixels until the bottom of this section's send button was flush with the bottom of the section (since that button is the southmost element of this section), because that is how it is in the PSD */
         position: absolute;
         width: 405px;
@@ -1077,6 +1095,7 @@ body {
         right: 0px;
         line-height: 0;     /* Without this declaration, there is an un-wanted space between the bottom-margin of this section and the top-padding of the button under it. */
         right: 140px;
+        padding-left: 0;
     }
 
     .emailBox {
