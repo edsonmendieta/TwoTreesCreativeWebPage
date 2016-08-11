@@ -159,7 +159,15 @@ $('.local-link').on('click', function() {
 
 //Swap Position of Contact-Us elements
 
-if ( $(window).width() < 965) {
+if ( $(window).width() < 1024) {
     $('#contactUs-section-heading').insertBefore('.googleMap');
     $('.contact-form-section').insertBefore('.googleMap');
 }
+
+
+// Refreshes page each time browser is re-sized
+
+window.addEventListener('resize', function () {
+    "use strict";
+    window.location.reload();
+});
