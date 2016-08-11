@@ -1196,7 +1196,7 @@ body {
 
 
 
-@media(min-width: 1290px) {
+@media(min-width: 1290px) {    /* keeps images centered as screen widens */
 
     .portfolio-carousel-outmost-container {
         width: auto;               /* helps to center element */
@@ -1207,12 +1207,55 @@ body {
     }
 
 
-    #Portfolio > span {
+    #Portfolio > span { /* gets rid of section arrow buttons as screen widens */
         display: none;
     }
 
 
+}
 
 
+
+@media(min-width: 1450px) {   /* keeps Contact form from & heading from breaking as screen widens */
+
+    #contactUs-section-heading {
+        display: block;
+        position: relative;
+        width: auto;
+        top: 35px;      /* this puts the heading exactly 35px south of the top-most part of this section, which is how it is in the PSD */
+        font-size: 275%;
+        margin-top: 70px;
+        margin-bottom: 22px;
+    }
+
+    .contact-form-section {
+        display: block;
+        top: 93px;      /* was orginally 66px, but I added 35px to it to adjust for the "top: 35px" I added to the heading above it. Then, I subracted pixels until the bottom of this section's send button was flush with the bottom of the section (since that button is the southmost element of this section), because that is how it is in the PSD */
+        position: absolute;
+        width: 405px;
+        height: 357px;
+        right: 0px;
+        line-height: 0;     /* Without this declaration, there is an un-wanted space between the bottom-margin of this section and the top-padding of the button under it. */
+        right: 20%;
+        padding-left: 0;
+    }
+
+
+
+}
+
+
+@media(min-width: 1620px) {
+    .about-text-wrapper {
+        padding-left: 15%;  /* brought closer to middle */
+    }
+
+    .about-final-paragraph {
+        padding-left: 15%;   /* brought closer to middle */
+    }
+
+    .team-carousel-outmost-container {
+        right: 15%;     /* brought closer to middle */
+    }
 
 }
